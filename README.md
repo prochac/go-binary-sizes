@@ -8,35 +8,11 @@ This is just a small experiment how the size of Go program can be reduced.
 - the `-tinygo` suffix means that the binary was compiled with TinyGo.
 - the `-trim` suffix means that the Go binary was stripped of debug information.
 
-| file                      | size  |
-|---------------------------|-------|
-| fmtprint-go               | 1.9M  |
-| fmtprint-go-trim          | 1.2M  |
-| fmtprint-go-trim-upx      | 543K  |
-| fmtprint-go-trim-upx-max  | 439K  |
-| fmtprint-go-upx           | 1.2M  |
-| fmtprint-go-upx-max       | 1013K |
-| fmtprint-tinygo           | 586K  |
-| fmtprint-tinygo-upx       | 218K  |
-| fmtprint-tinygo-upx-max   | 178K  |
-| hellohttp-go              | 6.8M  |
-| hellohttp-go-trim         | 4.6M  |
-| hellohttp-go-trim-upx     | 2.0M  |
-| hellohttp-go-trim-upx-max | 1.6M  |
-| hellohttp-go-upx          | 4.0M  |
-| hellohttp-go-upx-max      | 3.4M  |
-| hellohttp-tinygo          | 2.2M  |
-| hellohttp-tinygo-upx      | 641K  |
-| hellohttp-tinygo-upx-max  | 499K  |
-| print-go                  | 1.4M  |
-| print-go-trim             | 865K  |
-| print-go-trim-upx         | 393K  |
-| print-go-trim-upx-max     | 319K  |
-| print-go-upx              | 862K  |
-| print-go-upx-max          | 743K  |
-| print-tinygo              | 92K   |
-| print-tinygo-upx          | 41K   |
-| print-tinygo-upx-max      | 37K   |
+| file      | Go   | Go UPX | Go UPX max | Go no-debug | Go no-debug UPX | Go no-debug UPX max | TinyGo | TinyGo UPX | TinyGo UPX max |
+|-----------|------|--------|------------|-------------|-----------------|---------------------|--------|------------|----------------|
+| print     | 1.4M | 862K   | 743K       | 865K        | 393K            | 319K                | 92K    | 41K        | 37K            |
+| fmtprint  | 1.9M | 1.2M   | 1013K      | 1.2M        | 543K            | 439K                | 586K   | 218K       | 178K           |
+| hellohttp | 6.8M | 4.0M   | 3.4M       | 4.6M        | 2.0M            | 1.6M                | 2.2M   | 641K       | 499K           |
 
 ## Used versions
 
