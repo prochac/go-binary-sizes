@@ -1,3 +1,3 @@
 module github.com/prochac/go-binary-sizes
 
-go 1.22
+go 1.23

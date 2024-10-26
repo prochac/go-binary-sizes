@@ -10,13 +10,13 @@ This is just a small experiment how the size of Go program can be reduced.
 
 | file      | Go   | Go UPX | Go UPX max | Go no-debug | Go no-debug UPX | Go no-debug UPX max | TinyGo | TinyGo UPX | TinyGo UPX max |
 |-----------|------|--------|------------|-------------|-----------------|---------------------|--------|------------|----------------|
-| print     | 1.4M | 862K   | 743K       | 865K        | 393K            | 319K                | 92K    | 41K        | 37K            |
-| fmtprint  | 1.9M | 1.2M   | 1013K      | 1.2M        | 543K            | 439K                | 586K   | 218K       | 178K           |
-| hellohttp | 6.8M | 4.0M   | 3.4M       | 4.6M        | 2.0M            | 1.6M                | 2.2M   | 641K       | 499K           |
+| print     | 1.5M | 950K   | 817K       | 957K        | 434K            | 351K                | 117K   | 50K        | 45K            |
+| fmtprint  | 2.1M | 1.3M   | 1.1M       | 1.4M        | 604K            | 485K                | 630K   | 232K       | 190K           |
+| hellohttp | 7.2M | 4.3M   | 3.6M       | 4.9M        | 2.1M            | 1.6M                | 2.2M   | 650K       | 507K           |
 
 ## Used versions
 
-- go version go1.22.2 linux/amd64
-- tinygo version 0.31.2 linux/amd64
-  (using go version go1.22.2 and LLVM version 17.0.1)
-- upx 4.2.3
+- go version go1.23.2 linux/amd64
+- tinygo version 0.34.0 linux/amd64
+  (using go version go1.23.2 and LLVM version 18.1.2)
+- upx 4.2.4
